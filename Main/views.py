@@ -7,3 +7,6 @@ from django.core.urlresolvers import reverse_lazy
 
 def homepage(request):
     return render(request, 'homepage.html')
+
+def google(request):
+    return render(request, 'google064842d463096bf5.html')
