@@ -1,21 +1,19 @@
 {% block content %}
-{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>Madhavan Seshadri's Website</title>
+<title>ARIES - Free Bootstrap Theme by WowThemes.net</title>
 <!-- Bootstrap Core CSS -->
-{% load staticfiles %}
-<link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
+<link href="../static/css/bootstrap.min.css" rel="stylesheet">
 <!-- Custom CSS -->
-<link href={% static "css/theme.css"%} rel="stylesheet">
+<link href="../static/css/theme.css" rel="stylesheet">
 <!-- Custom Fonts -->
-<link href={% static "css/font-awesome.min.css"%} rel="stylesheet" type="text/css">
+<link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,7 +32,7 @@
 		<i class="fa fa-bars"></i>
 		</button>
 		<a class="navbar-brand page-scroll" href="homepage.html">
-		Madhavan Seshadri </a>
+		ARIES </a>
 	</div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -43,7 +41,7 @@
 			<a href="homepage.html">Home</a>
 			</li>
 			<li>
-			<a href="portfolio-item.html">Single Project</a>
+			<a href="portfolio-item.html">Singe Project</a>
 			</li>
 			<li>
 			<a href="page-sample.html">Page Sample</a>
@@ -63,11 +61,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<h1 class="brand-heading">My Endeavours</h1>
+				<h1 class="brand-heading">Get in Touch</h1>
 				<p class="intro-text">
-					I may be crazy for hosting static pages from Django ;) It will be dynamic soon. Haha!
+					The contact form is Workin'!
 				</p>
-				<a href="#about" class="btn btn-circle page-scroll">
+				<a href="#contact" class="btn btn-circle page-scroll">
 				<i class="fa fa-angle-double-down animated"></i>
 				</a>
 			</div>
@@ -75,49 +73,25 @@
 	</div>
 </div>
 </header>
-<!-- About Section -->
-<section id="about">
-<div class="container content-section text-center">
-	<div class="row">
-		<h2>ABOUT ME</h2>
-		<div class="col-lg-8 col-lg-offset-2">
-			<p>
-				I am an undergraduate student at the Nanyang Technological University, Singapore where I have been offered various opportunities to express
-                myself and achieve my true potential.
-                </p>
-            <p>
-                I am currently doing my internship at the BMW Forschungs- und Technologiehaus, Munich where I am working in the Traffic Information Management
-                and Routing department.
-            </p>
-			<p>
-				<a href="https://github.com/MADHAVAN001/CV/blob/master/CV.pdf" class="btnghost"><i class="fa fa-download"></i> Curriculum Vitae</a>
-			</p>
-		</div>
-	</div>
-</div>
-</section>
+<!-- Contact Section -->
 <section id="contact">
-<div class="container content-section text-center">
+<div class="container content-section">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2">
-			<h2>Author's Message</h2>
-			<p>
-				 To contact me, use the medium below
-            </p>
-			<p>
-				<i><a href="mailto:madhavan001@e.ntu.edu.sg" style="border-bottom:1px dashed #ccc;">madhavan001@e.ntu.edu.sg</a></i>
-			</p>
-			<ul class="list-inline banner-social-buttons">
-				<li>
-				<a href="https://www.linkedin.com/in/madhavan-seshadri-18b299aa?trk=nav_responsive_tab_profile" class="btn btnghost btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">LinkedIn</span></a>
-				</li>
-				<li>
-				<a href="https://www.facebook.com/thunder.groudon" class="btn btnghost btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
-				</li>
-				<li>
-				<a href="https://plus.google.com/+MadhavanSeshadri/posts" class="btn btnghost btn-lg"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">Google+</span></a>
-				</li>
-			</ul>
+			<div class="done">
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert">×</button>
+					Your message has been sent. Thank you!
+				</div>
+			</div>
+			<form method="post" action="contact.php" id="contactform">
+				<div class="form">
+					<input type="text" name="name" placeholder="Your Name *">
+					<input type="text" name="email" placeholder="Your E-mail Address *">
+					<textarea name="comment" rows="7" placeholder="Type your Message *"></textarea>
+					<input type="submit" id="submit" class="clearfix btn" value="Send">
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
@@ -126,7 +100,8 @@
 <footer>
 <div class="container text-center">
 	<p class="credits">
-		Copyright &copy; Madhavan Seshadri<br/>
+		Copyright &copy; Your Website 2015<br/>
+		"Aries" Template by WowThemes.net
 	</p>
 </div>
 </footer>
@@ -136,6 +111,8 @@
 <script src="../static/js/bootstrap.min.js"></script>
 <!-- Plugin JavaScript -->
 <script src="../static/js/jquery.easing.min.js"></script>
+<!-- Contact JavaScript -->
+<script src="../static/js/validate.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="../static/js/theme.js"></script>
 </body>

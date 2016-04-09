@@ -10,3 +10,6 @@ def homepage(request):
 
 def google(request):
     return render(request, 'google064842d463096bf5.html')
+
+def explorations(request):
+    return render(request, 'contact.html')
