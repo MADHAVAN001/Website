@@ -13,3 +13,6 @@ def google(request):
 
 def explorations(request):
     return render(request, 'explorations.html')
+
+def entrepreneurship(request):
+    return render(request, 'entrepreneurship.html')
