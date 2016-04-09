@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^$', views.homepage),
      url(r'^google064842d463096bf5.html$', views.google),
     url(r'^projects/$', views.homepage),
-    url(r'^contact.html/$', views.explorations),
+    url(r'^explorations/$', views.explorations),
     url(r'^homepage/$', views.homepage),
 
 ]

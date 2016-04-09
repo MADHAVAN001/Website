@@ -223,12 +223,7 @@ a:hover,a:focus {
 	padding:40px 0;
 	clear:both;
 }
-@media(min-width:767px) {
-	.content-section {
-		padding:20px 0;
-			 clear:both;
-	}
-}
+
 .btn {
 	border-radius:0;
 	text-transform:uppercase;
