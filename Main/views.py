@@ -16,3 +16,6 @@ def explorations(request):
 
 def entrepreneurship(request):
     return render(request, 'entrepreneurship.html')
+
+def projects(request):
+    return render(request, 'projects.html')

@@ -1,19 +1,21 @@
 {% block content %}
-
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
 <title>Madhavan Seshadri's Website</title>
 <!-- Bootstrap Core CSS -->
-<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+{% load staticfiles %}
+<link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
 <!-- Custom CSS -->
-<link href="../static/css/theme.css" rel="stylesheet">
+<link href={% static "css/theme.css"%} rel="stylesheet">
 <!-- Custom Fonts -->
-<link href="../static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href={% static "css/font-awesome.min.css"%} rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,7 +27,6 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation -->
-<script src="https://flickrit.com/embed.js.php?id=X2N5MB6Z0Q"></script>
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 <div class="container">
 	<div class="navbar-header">
@@ -39,16 +40,16 @@
 	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 		<ul class="nav navbar-nav">
 			<li>
-			<a href="homepage">Home</a>
+			<a href="/homepage">Home</a>
 			</li>
 			<li>
-			<a href="portfolio-item.html">Singe Project</a>
+			<a href="/projects">Projects</a>
+			</li>
+            <li>
+			<a href="/entrepreneurship">Entrepreneurship</a>
 			</li>
 			<li>
-			<a href="page-sample.html">Page Sample</a>
-			</li>
-			<li>
-			<a href="explorations.html">Hire me</a>
+			<a href="/explorations">Explorations</a>
 			</li>
 		</ul>
 	</div>

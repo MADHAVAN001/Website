@@ -21,8 +21,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.homepage),
      url(r'^google064842d463096bf5.html$', views.google),
-    url(r'^projects/$', views.homepage),
+    url(r'^projects/$', views.projects),
     url(r'^explorations/$', views.explorations),
     url(r'^entrepreneurship/$', views.entrepreneurship),
+    url(r'^homepage/$', views.homepage),
 
 ]
