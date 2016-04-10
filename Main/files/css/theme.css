@@ -40,6 +40,32 @@ a:hover,a:focus {
 	text-decoration:none;
 	color:inherit;
 }
+
+.wrap {
+    background: #fff;
+    margin: 20px auto;
+    display: block;
+    width: 300px;
+    height: 310px;
+    padding:20px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px
+    rgba(0, 0, 0, 0.3), 0 0 40px
+    rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px
+    rgba(0, 0, 0, 0.3), 0 0 40px
+    rgba(0, 0, 0, 0.1) inset;
+}
+
+.wrap img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+
+
 .light {
 	font-weight:400;
 }
