@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^projects/$', views.projects),
     url(r'^explorations/$', views.explorations),
     url(r'^entrepreneurship/$', views.entrepreneurship),
-    url(r'^homepage/$', views.homepage)
+    url(r'^homepage/$', views.homepage),
+    url(r'^research/$', views.research)
 ]
