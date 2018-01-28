@@ -1,183 +1,211 @@
 {% block content %}
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Madhavan Seshadri's Website</title>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    {% load staticfiles %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Madhavan Seshadri's Website</title>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-96459403-1', 'auto');
-  ga('send', 'pageview');
+            ga('create', 'UA-96459403-1', 'auto');
+            ga('send', 'pageview');
 
-</script>
-{% load staticfiles %}
-<link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
-<!-- Custom CSS -->
-<link href={% static "css/theme.css"%} rel="stylesheet">
-<!-- Custom Fonts -->
-<link href={% static "css/font-awesome.min.css"%} rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+        </script>
+        {% load staticfiles %}
+        <link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href={% static "css/theme.css" %} rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href={% static "css/font-awesome.min.css" %} rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet"
+              type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-<div class="container">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-		<i class="fa fa-bars"></i>
-		</button>
-		<a class="navbar-brand page-scroll" href="homepage.html">
-		Madhavan Seshadri </a>
-	</div>
-	<!-- Collect the nav links, forms, and other content for toggling -->
-	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-		<ul class="nav navbar-nav">
-			<li>
-			<a href="/homepage">Home</a>
-			</li>
-			<li>
-			<a href="/projects">Projects</a>
-			</li>
-            <li>
-			<a href="/research">Research</a>
-			</li>
-            <li>
-			<a href="/entrepreneurship">Entrepreneurship</a>
-			</li>
-			<li>
-			<a href="/explorations">Explorations</a>
-			</li>
-		</ul>
-	</div>
-	<!-- /.navbar-collapse -->
-</div>
-<!-- /.container -->
-</nav>
-<!-- Intro Header -->
-<header class="intro">
-<div class="intro-body">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h1 class="brand-heading">My Endeavours</h1>
-				<p class="intro-text">
-					"Life is what happens while you're busy making other plans."<br>- John Lennon
-				</p>
-				<a href="#about" class="btn btn-circle page-scroll">
-				<i class="fa fa-angle-double-down animated"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-</header>
-<!-- About Section -->
-<section id="about">
-<div class="container text-center" style="padding:70px 20px;">
-	<div class="row" style="border:0px solid;">
-		<h2>BIO</h2>
-		<div class="col-lg-8 col-lg-offset-2" style="border:0px solid;">
-			<p style="text-align:justify;font-size:100%;margin:0 0 15px;">
-                I am currently an undergraduate student at the Nanyang Technological University, Singapore.
-                I will be graduating in May 2017 with a Bachelor's Degree in the field of Computer Science
-                with specialization in Intelligent Agents and High Performance Computing.  My university
-                experience was fulfilling in which I have successfully completed FYP-URECA,
-                URECA, MiE and an overseas internship program.
-                </p>
-            <p style="text-align:justify;font-size:100%;margin:0 0 15px;">
-                In my URECA and FYP-URECA program, I was supervised
-                by Prof. Zhang Jie while working in the NTU-BMW Future Mobility Lab. I also recieved immence
-                support and guidance from my mentors Dr. Hongliang Guo and Dr. Zhiguang Cao with whose support I tackled
-                challenging problems in the domain of Stochastic Path Planning and Cooperative Path planning Systems.
-                The work done resulted in a workshop paper (TRANSET), a journal paper (IEEE TIST) and a
-                submission to a conference (IEEE ITSC). I was also chosen as one among the two undergraduate students
-                from NTU to present my research at the International Conference of Undergraduate Research (ICUR) at
-                Monash University, Australia in 2016. In 2017, I also recieved the award for 'Overall Winner' in the category
-                of 'Information Technology and Computer Science' in Discover URECA@NTU poster competition. I have also
-                had the unique experience of presenting an in-car demonstration of the developed Stochastic Routing System
-                to the top management from BMW. All of these experiences gained through the programmes given me the
-                unique skill of analysing a complex problem and coming up with innovative solutions.
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="homepage.html">
+                    Madhavan Seshadri </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/homepage">Home</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/research">Research</a>
+                    </li>
+                    <li>
+                        <a href="/entrepreneurship">Entrepreneurship</a>
+                    </li>
+                    <li>
+                        <a href="/explorations">Explorations</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">My Endeavours</h1>
+                        <p class="intro-text">
+                            "Life is what happens while you're busy making other plans."<br>- John Lennon
+                        </p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container text-center" style="padding:70px 20px;">
+            <div class="row" style="border:0px solid;">
+                <h2>BIO</h2>
+                <div class="col-lg-8 col-lg-offset-2" style="border:0px solid;">
+                    <p style="text-align:justify;font-size:100%;margin:0 0 15px;">
+                        I am currently working as a Software Engineer at Visa Inc., Singapore. I graduated with
+                        Bachelor's Degree in the field of Computer Science with specialization in Intelligent Agents and
+                        High Performance Computing. My university experience was fulfilling in which I have successfully
+                        completed FYP-URECA, URECA, MiE and an overseas internship program.
+                    </p>
+                    <p style="text-align:justify;font-size:100%;margin:0 0 15px;">
+                        In my URECA and FYP-URECA program, I was supervised
+                        by Prof. Zhang Jie while working in the NTU-BMW Future Mobility Lab. I also recieved immence
+                        support and guidance from my mentors Dr. Hongliang Guo and Dr. Zhiguang Cao with whose support I
+                        tackled
+                        challenging problems in the domain of Stochastic Path Planning and Cooperative Path planning
+                        Systems.
+                        The work done resulted in a workshop paper (TRANSET), a journal paper (IEEE TIST) and a
+                        submission to a conference (IEEE ITSC). I was also chosen as one among the two undergraduate
+                        students
+                        from NTU to present my research at the International Conference of Undergraduate Research (ICUR)
+                        at
+                        Monash University, Australia in 2016. In 2017, I also recieved the award for 'Overall Winner' in
+                        the category
+                        of 'Information Technology and Computer Science' in Discover URECA@NTU poster competition. I
+                        have also
+                        had the unique experience of presenting an in-car demonstration of the developed Stochastic
+                        Routing System
+                        to the top management from BMW. All of these experiences gained through the programmes given me
+                        the
+                        unique skill of analysing a complex problem and coming up with innovative solutions.
+                    </p>
+                    <p style="text-align:justify;font-size:100%;margin:0 0 15px;">
+                        I had an amazing opportunity of participating in an Overseas Internship Program in BMW at
+                        Munich, Germany.
+                        Interestingly, my internship project was very lose to my Undergraduate Research and was aimed
+                        at implmenting the in-house developed Stochastic Routing Algorithm for implementation in car.
+                        The R&D project
+                        was done under the Traffic Information Management and Routing Optimization Team which was headed
+                        by
+                        Dr. Ulrich Fastenrath. During the project, I was mentored by Mr. Tobias Kraus. As such, during
+                        that period
+                        of time, I also had the experience of travelling around Europe and experiencing their culture.
+                    </p>
+                    <p style="text-align:justify;font-size:100%;">
+                        Apart from my Research and Technical Experience, I was also a Founder and Head of Sales &
+                        Marketing at
+                        Tee!kle, a company aimed at revolutionizing the apparal industry through slogan T-shirts. The
+                        venture
+                        went south, but resulted in tremendous learning experience for me and my team. In addition to my
+                        startup,
+                        I was also chosen to be a part of Silicon Valley Immersion Programme as one among 20 students in
+                        a fully-funded
+                        entrepreneurship immersion programme based in San Francisco.
+                    </p>
+                    <p>
+                        <a href="https://github.com/MADHAVAN001/CV/blob/master/CV.pdf" class="btnghost"><i
+                                class="fa fa-download"></i> Curriculum Vitae</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container text-center" style="padding:70px 20px;">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Author's Message</h2>
+                    <p>
+                        To contact me, use the medium below
+                    </p>
+                    <p>
+                        <i><a href="mailto:madhavan001@e.ntu.edu.sg" style="border-bottom:1px dashed #ccc;">madhavan001@e.ntu.edu.sg</a></i>
+                    </p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://www.linkedin.com/in/madhavan-seshadri-18b299aa?trk=nav_responsive_tab_profile"
+                               class="btn btnghost btn-lg"><i class="fa fa-twitter fa-fw"></i><span
+                                    class="network-name">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/thunder.groudon" class="btn btnghost btn-lg"><i
+                                    class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/+MadhavanSeshadri/posts" class="btn btnghost btn-lg"><i
+                                    class="fa fa-google-plus fa-fw"></i><span class="network-name">Google+</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="credits">
+                Copyright &copy; Madhavan Seshadri<br/>
             </p>
-            <p style="text-align:justify;font-size:100%;margin:0 0 15px;">
-                I had an amazing opportunity of participating in an Overseas Internship Program in BMW at Munich, Germany.
-                Interestingly, my internship project was very lose to my Undergraduate Research and was aimed
-                at implmenting the in-house developed Stochastic Routing Algorithm for implementation in car. The R&D project
-                was done under the Traffic Information Management and Routing Optimization Team which was headed by
-                Dr. Ulrich Fastenrath. During the project, I was mentored by Mr. Tobias Kraus. As such, during that period
-                of time, I also had the experience of travelling around Europe and experiencing their culture.
-            </p>
-            <p style="text-align:justify;font-size:100%;">
-                Apart from my Research and Technical Experience, I was also a Founder and Head of Sales & Marketing at
-                Tee!kle, a company aimed at revolutionizing the apparal industry through slogan T-shirts. The venture
-                went south, but resulted in tremendous learning experience for me and my team. In addition to my startup,
-                I was also chosen to be a part of Silicon Valley Immersion Programme as one among 20 students in a fully-funded
-                entrepreneurship immersion programme based in San Francisco.
-            </p>
-			<p>
-				<a href="https://github.com/MADHAVAN001/CV/blob/master/CV.pdf" class="btnghost"><i class="fa fa-download"></i> Curriculum Vitae</a>
-			</p>
-		</div>
-	</div>
-</div>
-</section>
-<section id="contact">
-<div class="container text-center" style="padding:70px 20px;">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2">
-			<h2>Author's Message</h2>
-			<p>
-				 To contact me, use the medium below
-            </p>
-			<p>
-				<i><a href="mailto:madhavan001@e.ntu.edu.sg" style="border-bottom:1px dashed #ccc;">madhavan001@e.ntu.edu.sg</a></i>
-			</p>
-			<ul class="list-inline banner-social-buttons">
-				<li>
-				<a href="https://www.linkedin.com/in/madhavan-seshadri-18b299aa?trk=nav_responsive_tab_profile" class="btn btnghost btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">LinkedIn</span></a>
-				</li>
-				<li>
-				<a href="https://www.facebook.com/thunder.groudon" class="btn btnghost btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
-				</li>
-				<li>
-				<a href="https://plus.google.com/+MadhavanSeshadri/posts" class="btn btnghost btn-lg"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">Google+</span></a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-</section>
-<!-- Footer -->
-<footer>
-<div class="container text-center">
-	<p class="credits">
-		Copyright &copy; Madhavan Seshadri<br/>
-	</p>
-</div>
-</footer>
-<!-- jQuery -->
-<script src="../static/js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="../static/js/bootstrap.min.js"></script>
-<!-- Plugin JavaScript -->
-<script src="../static/js/jquery.easing.min.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="../static/js/theme.js"></script>
-</body>
-</html>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="../static/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../static/js/jquery.easing.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../static/js/theme.js"></script>
+    </body>
+    </html>
 {% endblock %}
