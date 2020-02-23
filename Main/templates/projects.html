@@ -1,229 +1,260 @@
 {% block content %}
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<title>Madhavan Seshadri's Website</title>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    {% load staticfiles %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Madhavan Seshadri's Website</title>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-96459403-1', 'auto');
-  ga('send', 'pageview');
+            ga('create', 'UA-96459403-1', 'auto');
+            ga('send', 'pageview');
 
-</script>
-{% load staticfiles %}
-<link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
-<!-- Custom CSS -->
-<link href={% static "css/theme.css"%} rel="stylesheet">
-<!-- Custom Fonts -->
-<link href={% static "css/font-awesome.min.css"%} rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+        </script>
+        {% load staticfiles %}
+        <link href={% static "css/bootstrap.min.css" %} rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href={% static "css/theme.css" %} rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href={% static "css/font-awesome.min.css" %} rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet"
+              type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<!-- Navigation -->
-<script>
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <script>
     </script>
 
 
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-<div class="container">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-		<i class="fa fa-bars"></i>
-		</button>
-		<a class="navbar-brand page-scroll" href="homepage.html">
-		Madhavan Seshadri </a>
-	</div>
-	<!-- Collect the nav links, forms, and other content for toggling -->
-	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-		<ul class="nav navbar-nav">
-			<li>
-			<a href="/homepage">Home</a>
-			</li>
-			<li>
-			<a href="/projects">Projects</a>
-			</li>
-            <li>
-			<a href="/research">Research</a>
-			</li>
-            <li>
-			<a href="/entrepreneurship">Entrepreneurship</a>
-			</li>
-			<li>
-			<a href="/explorations">Explorations</a>
-			</li>
-		</ul>
-	</div>
-	<!-- /.navbar-collapse -->
-</div>
-<!-- /.container -->
-</nav>
-<!-- Intro Header -->
-<header class="intro">
-<div class="intro-body">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<h1 class="brand-heading">Hacks</h1>
-				<p class="intro-text">
-					"I feel like every project I work on is a dream project, so long as I am learning."<br>- Simeon Kondev
-				</p>
-				<a href="#contact" class="btn btn-circle page-scroll">
-				<i class="fa fa-angle-double-down animated"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
-</header>
-<!-- Contact Section -->
-<section id="explorations" style="padding:70px 20px;">
-<style>.wrap {
-    background: #fff;
-    margin: 20px auto;
-    display: block;
-    width: 600px;
-    height: 500px;
-    padding:20px;
-    border-radius: 2px 2px 2px 2px;
-    -webkit-box-shadow: 0 1px 4px
-    rgba(0, 0, 0, 0.3), 0 0 40px
-    rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px
-    rgba(0, 0, 0, 0.3), 0 0 40px
-    rgba(0, 0, 0, 0.1) inset;
-}
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="homepage.html">
+                    Madhavan Seshadri </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/homepage">Home</a>
+                    </li>
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/research">Research</a>
+                    </li>
+                    <li>
+                        <a href="/entrepreneurship">Entrepreneurship</a>
+                    </li>
+                    <li>
+                        <a href="/explorations">Explorations</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Hacks</h1>
+                        <p class="intro-text">
+                            "I feel like every project I work on is a dream project, so long as I am learning."<br>-
+                            Simeon Kondev
+                        </p>
+                        <a href="#contact" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Contact Section -->
+    <section id="explorations" style="padding:70px 20px;">
+        <style>.wrap {
+            background: #fff;
+            margin: 20px auto;
+            display: block;
+            width: 600px;
+            height: 500px;
+            padding: 20px;
+            border-radius: 2px 2px 2px 2px;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
 
-.wrap img {
-    width: 100%;
-    margin-top: 15px;
-}
-</style>
-
-    <div class="wrap ">
-       <h3>API Recognition System</h3>
-       <center><img style="width:80%;" src={% static "NLP.jpg"%} />
-</center>
-        <p>
-            The achievements made in the project are:
-            <ul>
-        <li>A Natural Language Processing project for detection of APIs in Stackoverflow Posts.</li>
-        <li>Developed a Named Entity Recognition model developed for the task.</li>
-        <li>Achieved 54% precision in detecting relevant API calls</li>
-    </ul>
-        <br>
-        <a href="https://github.com/MADHAVAN001/api-recognition"><b><u>Code</u></b></a>|
-            <a href={% static "Stackoverflow.pdf"%}><b><u>Report</u></b></a>|
-       </p>
-       <br />
-</div>
-
-    <div class="wrap ">
-       <h3>Floyd Warshall algorithm in CUDA</h3>
-       <center><img style="width:80%;" src={% static "cuda.png"%} /></center>
-        <p>
-            The achievements made in the project are:
-            <ul>
-        <li>Parallel execution of Floyd Warshall Algorithm.</li>
-        <li>Obtained parallelization by executing parts on GPU coded using CUDA.</li>
-        <li>Fully optimized kernel achieved a speedup of 87 for a matrix of size 5000 X 5000.</li>
-    </ul>
-        <br>
-        <a href="https://github.com/MADHAVAN001/cuda-floyd-warshall"><b><u>Code</u></b></a>|
-            <a href={% static "CUDA-FloydWarshall.pdf"%}><b><u>Report</u></b></a>|
-       </p>
-       <br />
-    </div>
-
-    <div class="wrap ">
-       <h3>Autonomous Maze Exploring Robot</h3>
-       <center><iframe width="427" height="240" src="https://www.youtube.com/embed/WYIUyVDhZAA" frameborder="0" allowfullscreen></iframe>
-</center>
-        <p>
-            The achievements made in the project are:
-            <ul>
-        <li>Autonomously able to explore a 8mX8m maze in under 6 minutes(test environment)</li>
-        <li>Calculate and complete the shortest path in under 20 seconds</li>
-        <li>Successfully integrated multiple sub-systems to act in a cohesive manner. (Arduino, Rpi, Nexus Tablet, PC)</li>
-    </ul>
-       </p>
-       <br />
-</div>
+        .wrap img {
+            width: 100%;
+            margin-top: 15px;
+        }
+        </style>
 
         <div class="wrap ">
-       <h3>Crisis Management System</h3>
-       <center><img src={% static "CMS.png"%} style="width:80%;" /></center>
-        <p>
-            The achievements made in the project are:
+            <h3>Semantic Segmentation</h3>
+            <center><img style="width:80%;" src={% static "semantic_segmentation.PNG" %}/>
+            </center>
+            <p>
+                The achievements made in the project are:
             <ul>
-        <li>Successfully able to enter and manage different crisis</li>
-        <li>Real time tracking of crisis and the ability to warn all subscribers to the event.</li>
-        <li>Implemented in Python-Django MVT framework. Used: Facebook API, Google Fusion Tables API, ReportLab API</li>
-    </ul>
+                <li>Scene segmentation into multiple object categories.</li>
+                <li>Developed multiple deep learning models, namely: UNet and FCN.</li>
+                <li>Applied sparsification and quantization of model for deployment on edge devices.</li>
+            </ul>
+            <br>
+            <a href="https://github.com/MADHAVAN001/semantic-segmentation"><b><u>Code</u></b></a>|
+            <a href={% static "Semantic Segmentation.pdf" %}><b><u>Report</u></b></a>|
+            </p>
+            <br/>
+        </div>
+
+
+        <div class="wrap ">
+            <h3>API Recognition System</h3>
+            <center><img style="width:80%;" src={% static "NLP.jpg" %}/>
+            </center>
+            <p>
+                The achievements made in the project are:
+            <ul>
+                <li>A Natural Language Processing project for detection of APIs in Stackoverflow Posts.</li>
+                <li>Developed a Named Entity Recognition model developed for the task.</li>
+                <li>Achieved 54% precision in detecting relevant API calls</li>
+            </ul>
+            <br>
+            <a href="https://github.com/MADHAVAN001/api-recognition"><b><u>Code</u></b></a>|
+            <a href={% static "Stackoverflow.pdf" %}><b><u>Report</u></b></a>|
+            </p>
+            <br/>
+        </div>
+
+        <div class="wrap ">
+            <h3>Floyd Warshall algorithm in CUDA</h3>
+            <center><img style="width:80%;" src={% static "cuda.png" %}/></center>
+            <p>
+                The achievements made in the project are:
+            <ul>
+                <li>Parallel execution of Floyd Warshall Algorithm.</li>
+                <li>Obtained parallelization by executing parts on GPU coded using CUDA.</li>
+                <li>Fully optimized kernel achieved a speedup of 87 for a matrix of size 5000 X 5000.</li>
+            </ul>
+            <br>
+            <a href="https://github.com/MADHAVAN001/cuda-floyd-warshall"><b><u>Code</u></b></a>|
+            <a href={% static "CUDA-FloydWarshall.pdf" %}><b><u>Report</u></b></a>|
+            </p>
+            <br/>
+        </div>
+
+        <div class="wrap ">
+            <h3>Autonomous Maze Exploring Robot</h3>
+            <center>
+                <iframe width="427" height="240" src="https://www.youtube.com/embed/WYIUyVDhZAA" frameborder="0"
+                        allowfullscreen></iframe>
+            </center>
+            <p>
+                The achievements made in the project are:
+            <ul>
+                <li>Autonomously able to explore a 8mX8m maze in under 6 minutes(test environment)</li>
+                <li>Calculate and complete the shortest path in under 20 seconds</li>
+                <li>Successfully integrated multiple sub-systems to act in a cohesive manner. (Arduino, Rpi, Nexus
+                    Tablet, PC)
+                </li>
+            </ul>
+            </p>
+            <br/>
+        </div>
+
+        <div class="wrap ">
+            <h3>Crisis Management System</h3>
+            <center><img src={% static "CMS.png" %} style="width:80%;"/></center>
+            <p>
+                The achievements made in the project are:
+            <ul>
+                <li>Successfully able to enter and manage different crisis</li>
+                <li>Real time tracking of crisis and the ability to warn all subscribers to the event.</li>
+                <li>Implemented in Python-Django MVT framework. Used: Facebook API, Google Fusion Tables API, ReportLab
+                    API
+                </li>
+            </ul>
             <a href="https://github.com/MADHAVAN001/CrisisManagementSystem"><b><u>Code</u></b></a>|
             <a href="https://github.com/MADHAVAN001/CrisisManagementSystem/blob/master/Documentation/SRSv1.5.pdf"><b><u>SRS</u></b></a>|
             <a href="https://github.com/MADHAVAN001/CrisisManagementSystem/blob/master/Documentation/Architecture%20Design.pdf"><b><u>Architecture</u></b></a>|
-            <a href="https://github.com/MADHAVAN001/CrisisManagementSystem/tree/master/Documentation"><b><u>Other Documentation</u></b></a>
-       </p>
-       <br />
-</div>
-
-      <div class="wrap ">
-       <h3>5 Stage Pipelined Architecture</h3>
-       <center><img src={% static "dlx_datapath.jpg"%} style="width:70%;" /></center>
-        <p>
-            The achievements made in the project are:
-            <ul>
-        <li>Developing a MIPS-like microprocessor on Verilog without cache.</li>
-        <li>Able to execute R,I and Jump type instructions, including (LW, SW, JAL, JR etc.)</li>
-        <li>Visualized reduction in CPI by loop-rolling</li>
-    </ul>
-            <a href="https://github.com/MADHAVAN001/simple-mips-processor-design"><b><u>Code</u></b></a>|
-            <a href={% static "CZ3001.pdf"%}><b><u>Report</u></b></a>|
-          </p>
-       <br />
-</div>
-
-<div class="container" >
-    <div class="col-lg-8 col-lg-offset-2" style="border:0px solid;">
-  
+            <a href="https://github.com/MADHAVAN001/CrisisManagementSystem/tree/master/Documentation"><b><u>Other
+                Documentation</u></b></a>
+            </p>
+            <br/>
         </div>
 
-</div>
-    <div id="X2N5MB6Z0Q"></div>
-</section>
-<!-- Footer -->
-<footer>
-<div class="container text-center">
-	<p class="credits">
-		Copyright &copy; Madhavan Seshadri<br/>
-	</p>
-</div>
-</footer>
-<!-- jQuery -->
-<script src="../static/js/jquery.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="../static/js/bootstrap.min.js"></script>
-<!-- Plugin JavaScript -->
-<script src="../static/js/jquery.easing.min.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="../static/js/theme.js"></script>
-</body>
-</html>
+        <div class="wrap ">
+            <h3>5 Stage Pipelined Architecture</h3>
+            <center><img src={% static "dlx_datapath.jpg" %} style="width:70%;"/></center>
+            <p>
+                The achievements made in the project are:
+            <ul>
+                <li>Developing a MIPS-like microprocessor on Verilog without cache.</li>
+                <li>Able to execute R,I and Jump type instructions, including (LW, SW, JAL, JR etc.)</li>
+                <li>Visualized reduction in CPI by loop-rolling</li>
+            </ul>
+            <a href="https://github.com/MADHAVAN001/simple-mips-processor-design"><b><u>Code</u></b></a>|
+            <a href={% static "CZ3001.pdf" %}><b><u>Report</u></b></a>|
+            </p>
+            <br/>
+        </div>
+
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" style="border:0px solid;">
+
+            </div>
+
+        </div>
+        <div id="X2N5MB6Z0Q"></div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="credits">
+                Copyright &copy; Madhavan Seshadri<br/>
+            </p>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="../static/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="../static/js/jquery.easing.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../static/js/theme.js"></script>
+    </body>
+    </html>
 {% endblock %}
